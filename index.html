@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3f74c5b260.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>HTML CSS Day 7</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light bg-light"
+      id="navbar"
+    >
+      <div class="container-fluid gx-5">
+        <a class="navbar-brand"><img src="logo.png" alt="logo w png" /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav "
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Resources</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Events </a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Customer services</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Casestudies </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">How does it work</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="d-flex ms-auto">
+            <button class="btn btn-outline-success me-3">
+              Apply as expert
+            </button>
+
+            <button class="btn btn-success">Find expert</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Features -->
+    <div class="container">
+      <div class="features-container text-center">
+        <p>Sales & marketing</p>
+        <p>Corporate Strategy</p>
+        <p>Digital Transformation & Technology</p>
+        <p>Operation & supply chain management</p>
+        <p>Data & Business analystics</p>
+        <p>Finance & Accounting</p>
+        <p>Human resources & Organizations</p>
+      </div>
+    </div>
+
+    <!-- Heor -->
+    <section id="hero">
+      <div class="container hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-heading">
+              Excel your business with right expertise.
+            </h1>
+            <p class="para mb-4">
+              Find the talent which fits your needs, market and business.
+            </p>
+
+            <div class="">
+              <button class="btn btn-outline-success me-3">
+                Apply as expert
+              </button>
+
+              <button class="btn btn-success">Find expert</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 hero-images">
+            <img
+              src="hero-person.png"
+              class="hero-img"
+              alt="person with a laptop"
+            />
+            <img class="hero-about-img" src="hero-about.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about-us ">
+      <div class="container pt-3 pb-3 text-center">
+        <h1 class="mt-5 mb-4 fs-2">About us</h1>
+        <p class="para-green">We are community of expert consultants</p>
+        <div class="text-container">
+          <p class="mb-5">
+            We are community of expert consultants libero tempore, cum soluta
+            nobis est eligendi optio cumque nihil impedit quo minus id quod
+            maxime placeat facere possimus, omnis voluptas assumenda est, omnis
+            dolor repellendus. Temporibus autem quibusdam et aut officiis
+            debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+            repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
+            tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+            alias consequatur aut perferendis doloribus asperiores repellatl.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Projects -->
+    <section id="projects">
+      <div class="container projects-container text-center">
+        <h1 class="mt-4 mb-5 fs-2">Trending Projects</h1>
+
+        <div class="mt-5 cards-container">
+          <div class="cards">
+            <p class="icon-container">
+              <span class="fa-stack fa-2x">
+                <i class="card-icon-bg fas fa-circle fa-stack-2x"></i>
+                <i class="card-icon fas fa-arrow-trend-up fa-stack-1x"></i>
+              </span>
+            </p>
+            <p class="card-title fw-bold fs-5">Sales & Marketing</p>
+            <p class="card-muted-text fs-6">Market Research</p>
+            <p class="card-muted-text fs-6">
+              Understand your target markets to better serve stakeholders,
+              expand offerings, identify growth opportunities, and make faster
+              business decisions.
+            </p>
+          </div>
+
+          <div class="cards">
+            <p class="icon-container">
+              <span class="fa-stack fa-2x">
+                <i class="card-icon-bg fas fa-circle fa-stack-2x"></i>
+                <i class="card-icon fas fa-signal fa-stack-1x"></i>
+              </span>
+            </p>
+            <p class="card-title fw-bold fs-5">
+              Digital Transformation & Technology
+            </p>
+            <p class="card-muted-text fs-6">
+              Digital Strategy & Transformation
+            </p>
+            <p class="card-muted-text fs-6">
+              Scope and assess your change management needs for strategic
+              organizational transformation and successfully navigate complex
+              industry shifts.h
+            </p>
+          </div>
+
+          <div class="cards">
+            <p class="icon-container">
+              <span class="fa-stack fa-2x">
+                <i class="card-icon-bg fas fa-circle fa-stack-2x"></i>
+                <i class="card-icon fas fa-dollar-sign fa-stack-1x"></i>
+              </span>
+            </p>
+            <p class="card-title fw-bold fs-5">
+              Digital Transformation & Technology
+            </p>
+            <p class="card-muted-text fs-6">
+              Digital Strategy & Transformation
+            </p>
+            <p class="card-muted-text fs-6">
+              Scope and assess your change management needs for strategic
+              organizational transformation and successfully navigate complex
+              industry shifts.h
+            </p>
+          </div>
+
+          <div class="cards">
+            <p class="icon-container">
+              <span class="fa-stack fa-2x">
+                <i class="card-icon-bg fas fa-circle fa-stack-2x"></i>
+                <i class="card-icon fas fa-arrow-trend-up fa-stack-1x"></i>
+              </span>
+            </p>
+            <p class="card-title fw-bold fs-5">Sales & Marketing</p>
+            <p class="card-muted-text fs-6">Market Research</p>
+            <p class="card-muted-text fs-6">
+              Understand your target markets to better serve stakeholders,
+              expand offerings, identify growth opportunities, and make faster
+              business decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Experts -->
+    <section id="experts">
+      <div class="container experts-container">
+        <h1 class="mb-5 fs-2 text-center">Our Experts</h1>
+        <div class="row g-5">
+          <!-- Card -->
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                  <img
+                    src="https://www.nasdaq.com/sites/acquia.prod/files/styles/1080x608_16_9/public/image/8518c6e88e8f0da3d3b9f741c442a7529e8fcc36_consulting-meeting.jpg?itok=tu7kRz9p"
+                    class="card-img img-fluid"
+                    alt="Image"
+                  />
+                </div>
+                <div class="col-lg-7 align-items-center">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Digital Transformation & Technology
+                    </h5>
+                    <p class="card-text">
+                      Cupiditate non provident, similique sunt in culpa qui
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                  <img
+                    src="https://www.nasdaq.com/sites/acquia.prod/files/styles/1080x608_16_9/public/image/8518c6e88e8f0da3d3b9f741c442a7529e8fcc36_consulting-meeting.jpg?itok=tu7kRz9p"
+                    class="card-img"
+                    alt="Image"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Operations & supply chain management
+                    </h5>
+                    <p class="card-text">
+                      hcsjkang uygtf provident, similique sun experts
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                  <img
+                    src="https://www.nasdaq.com/sites/acquia.prod/files/styles/1080x608_16_9/public/image/8518c6e88e8f0da3d3b9f741c442a7529e8fcc36_consulting-meeting.jpg?itok=tu7kRz9p"
+                    class="card-img"
+                    alt="Image"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Data & Business analytics</h5>
+                    <p class="card-text">
+                      hkoccaecati cupiditate non provident, similique sun
+                      experts
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                  <img
+                    src="https://www.nasdaq.com/sites/acquia.prod/files/styles/1080x608_16_9/public/image/8518c6e88e8f0da3d3b9f741c442a7529e8fcc36_consulting-meeting.jpg?itok=tu7kRz9p"
+                    class="card-img"
+                    alt="Image"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Finance & Accounting</h5>
+                    <p class="card-text">
+                      hkoccaecati cupiditate non provident, similique sun
+                      experts
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                  <img
+                    src="https://www.nasdaq.com/sites/acquia.prod/files/styles/1080x608_16_9/public/image/8518c6e88e8f0da3d3b9f741c442a7529e8fcc36_consulting-meeting.jpg?itok=tu7kRz9p"
+                    class="card-img"
+                    alt="Image"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Sales & marketing</h5>
+                    <p class="card-text">
+                      es cupiditate non provident, similique sun experts
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="row g-0 align-items-center">
+                <div class="col-lg-5">
+                  <img
+                    src="https://www.nasdaq.com/sites/acquia.prod/files/styles/1080x608_16_9/public/image/8518c6e88e8f0da3d3b9f741c442a7529e8fcc36_consulting-meeting.jpg?itok=tu7kRz9p"
+                    class="card-img"
+                    alt="Image"
+                  />
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Corporate strategy</h5>
+                    <p class="card-text">
+                      es et quas molestias excepturi sint hkoccaecati
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How does it work -->
+    <section id="how-work">
+      <div class="container">
+        <h1 class="mb-5 fs-2 text-center">How does it work?</h1>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="illustration.png" alt="girl-siting on pc" />
+            </div>
+
+            <div class="col-lg-6">
+              <p class="fs-4">
+                Find the <span class="para-green"> expert</span> in 3 simple
+                steps!
+              </p>
+
+              <div class="points">
+                <div class="point">
+                  <p class="point-bg">1</p>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis issimos ducimus qui blanditiis
+                  </p>
+                </div>
+
+                <div class="point">
+                  <p class="point-bg">2</p>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis issimos ducimus qui blanditiis
+                  </p>
+                </div>
+
+                <div class="point">
+                  <p class="point-bg">3</p>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis issimos ducimus qui blanditiis
+                  </p>
+                </div>
+              </div>
+
+              <button class="btn mt-4 btn-success wide-btn">
+                Create Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact-us -->
+    <section id="contact-us">
+      <div class="container">
+        <h1 class="mb-5 fs-2 text-center">Contact us here</h1>
+
+        <div class="contact-container">
+          <div class="input-group input-group-lg mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+
+            <button class="btn btn-success btn-lg" type="button">
+              Request query
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <img class="footer-logo mb-3" src="logo.png" alt="" />
+
+        <div class="footer-container">
+          <div class="footer-items mb-3">
+            <p class="footer-heading fs-5 mb-4">Company</p>
+            <p class="footer-text">About us</p>
+            <p class="footer-text">Brand Resources</p>
+            <p class="footer-text">Careers</p>
+            <p class="footer-text">Legal</p>
+            <p class="footer-text">Security</p>
+          </div>
+
+          <div class="footer-items mb-3">
+            <p class="footer-heading fs-5 mb-4">Resources</p>
+            <p class="footer-text">Blog</p>
+            <p class="footer-text">Events</p>
+            <p class="footer-text">Customer services</p>
+            <p class="footer-text">Casestudies</p>
+          </div>
+
+          <div class="footer-items mb-3">
+            <p class="footer-heading fs-5 mb-4">Market place services</p>
+            <p class="footer-text">Corporate strategy</p>
+            <p class="footer-text">Supply chain</p>
+            <p class="footer-text">Data analytics and business analytics</p>
+            <p class="footer-text">Finance & Accounting</p>
+            <p class="footer-text">Market Research</p>
+            <p class="footer-text">Technology & Digital</p>
+            <p class="footer-text">View all categories</p>
+          </div>
+
+          <div class="footer-items mb-3">
+            <p class="footer-heading fs-5 mb-4">Support</p>
+            <p class="footer-text">Support center</p>
+            <p class="footer-text">FAQs</p>
+          </div>
+
+          <div class="footer-items mb-3">
+            <p class="footer-heading fs-5 mb-4">Contact us</p>
+            <p class="footer-text">Call us</p>
+            <p class="footer-text">Mail us</p>
+
+            <p class="fa-stack fa-2x">
+              <i class="card-icon-wbg fas fa-circle fa-stack-2x"></i>
+              <i class="card-icon-g fa-brands fa-linkedin-in fa-stack-1x"></i>
+            </p>
+
+            <p class="fa-stack fa-2x">
+              <i class="card-icon-wbg fas fa-circle fa-stack-2x"></i>
+              <i class="card-icon-g fa-brands fa-twitter fa-stack-1x"></i>
+            </p>
+
+            <p class="fa-stack fa-2x">
+              <i class="card-icon-wbg fas fa-circle fa-stack-2x"></i>
+              <i class="card-icon-g fa-brands fa-facebook-f fa-stack-1x"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center">2022 All rights reserved. @wenestor.com</p>
+    </footer>
+
+    <!-- JS -->
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--my js -->
+    <script src="script.js"></script>
+  </body>
+</html>
