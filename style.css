@@ -16,7 +16,7 @@ html {
 body {
   background-color: #e6faee;
   font-family: "Playfair Display", serif;
-  font-size: 18px;
+
   animation: fadeInAnimation ease-in 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -34,16 +34,15 @@ body {
 .btn-success {
   background-color: #01bd4e;
   border: 1px solid #01bd4e;
-  padding: 8px 18px;
+  color: #fff !important;
 }
 
 .btn-outline-success {
   background: #ffffff;
   border: 1px solid #01bd4e;
   border-radius: 5px;
-  color: #01bd4e;
+
   font-weight: 400;
-  padding: 8px 12px;
 }
 
 .para-green {
@@ -55,10 +54,19 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-brand {
-  min-width: 2%;
-  width: 30%;
+.nb-width {
+  width: 50%;
 }
+
+.m-width {
+  width: 100%;
+}
+
+.r-width {
+  width: 100%;
+}
+
+/* Made by Prajot  */
 
 .navbar-brand img {
   width: 120px;
@@ -68,12 +76,23 @@ body {
   margin: 0px 10px;
 }
 
+#navbar .btn-outline-success {
+  color: #01bd4e !important;
+}
+
+#navbar .btn-outline-success:hover {
+  color: white !important;
+}
+
 .navbar a {
   color: black;
 }
+
 .add-shadow {
-  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.404);
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.404) !important;
 }
+
+/* features */
 
 .features-container {
   padding-top: 120px;
@@ -93,11 +112,11 @@ body {
 }
 
 .hero-img {
-  width: 679.5px;
-  height: 567px;
+  width: 600px;
+  height: 500px;
 }
 
-.hero-images {
+/* .hero-images {
   position: relative;
 }
 
@@ -106,7 +125,7 @@ body {
   top: 140px;
   right: 90px;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.192);
-}
+} */
 
 /* About-us */
 .text-container {
@@ -153,9 +172,11 @@ body {
 }
 
 .card-img {
-  min-height: 200px;
+  overflow: hidden;
+  height: 200px;
   border-radius: 6px 0px 0px 0px !important;
   object-fit: cover;
+  background-position: center center;
 }
 
 /*  How does it work?*/
@@ -181,6 +202,10 @@ body {
 .wide-btn {
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.illustration {
+  width: 600px;
 }
 
 /* Contact */
