@@ -116,7 +116,7 @@ body {
   height: 500px;
 }
 
-/* .hero-images {
+.hero-images {
   position: relative;
 }
 
@@ -125,7 +125,7 @@ body {
   top: 140px;
   right: 90px;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.192);
-} */
+}
 
 /* About-us */
 .text-container {
